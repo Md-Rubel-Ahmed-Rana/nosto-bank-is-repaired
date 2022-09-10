@@ -10,10 +10,11 @@ function getTextElementValueById(elementId) {
   const textElement = document.getElementById(elementId);
   const textElementValueString = textElement.innerText;
   const textElementValue = parseInt(textElementValueString);
-  textElementValue;
+  return textElementValue;
+
 }
 
 function setTextElementValueById(elementId, newValue) {
-  const textElement = getTextElementValueById(elementId);
-  textElement.value = newValue;
+  const textElement = document.getElementById(elementId);
+  textElement.innerText = newValue;
 }
